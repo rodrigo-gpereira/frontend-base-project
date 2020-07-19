@@ -94,7 +94,11 @@ export const scripts = () => {
 //Browser Sync
 const server = browserSync.create();
 export const serve = (done) => {
-  server.init();
+  server.init({
+    server: {
+      baseDir: "./",
+    },
+  });
   done();
 };
 export const reload = (done) => {

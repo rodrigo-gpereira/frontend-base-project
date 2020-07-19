@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "clean": "gulp clean",
     "build": "gulp build --prod"
   },
   "author": "Rodrigo Gomes",
